@@ -1,6 +1,7 @@
 import { AntDesign } from "@expo/vector-icons";
 import { View, Image, Text } from "react-native";
 import { styles } from "../css/Styles";
+
 export default function Header() {
   return (
     <View style={styles.header}>
@@ -11,6 +12,7 @@ export default function Header() {
         style={styles.logo}
       />
       <Text style={styles.titulo}> MyStore </Text>
+
       <AntDesign name="shoppingcart" size={24} color="white" />
     </View>
   );

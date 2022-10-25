@@ -1,7 +1,7 @@
 import { AntDesign } from "@expo/vector-icons";
-import { View, Image, Text } from "react-native";
+import { View, Image, Text, TouchableOpacity } from "react-native";
 import { styles } from "../css/Styles";
-export default function Header() {
+export default function Header(props: any) {
   return (
     <View style={styles.header}>
       <Image
@@ -11,7 +11,10 @@ export default function Header() {
         style={styles.logo}
       />
       <Text style={styles.titulo}> MyStore </Text>
-      <AntDesign name="shoppingcart" size={24} color="white" />
+
+      <TouchableOpacity onPress={() => props.tela.navigate("Carrinho")}>
+        <AntDesign name="shoppingcart" size={24} color="white" />
+      </TouchableOpacity>
     </View>
   );
 }

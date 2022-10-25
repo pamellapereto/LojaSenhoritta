@@ -34,4 +34,39 @@ export const styles = StyleSheet.create({
     fontweight: "bold",
     textAlign: "center",
   },
+
+  btnRemoverCarrinho: {
+    backgroundColor: "red",
+    width: 200,
+    padding: 5,
+    borderRadius: 10,
+    marginRight: "auto",
+    marginLeft: "auto",
+    marginBottom: 10,
+  },
+
+  produto: {
+    padding: 15,
+    fontSize: 15,
+    fontWeight: "bold",
+  },
+
+  preco: {
+    paddingLeft: 28,
+    paddingBottom: 15,
+    color: "#900",
+    fontSize: 15,
+    fontWeight: "bold",
+  },
+
+  quantidade: {
+    paddingBottom: 15,
+    fontSize: 15,
+    color: "darkblue",
+    fontWeight: "bold",
+  },
+
+  btnFecharPedido: {},
+
+  txtFecharPedido: {},
 });
